@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Vinicius Neves",
+    "email": "vinny@alura.com",
+    "password": "789456"
+  },
+  {
+    "name": "Gui Lima",
+    "email": "gui@alura.com",
+    "password": "guilimadev"
+  },
+  {
+    "name": "Moni Hilman",
+    "email": "moni@alura.com",
+    "password": "moniverson"
+  }
+]

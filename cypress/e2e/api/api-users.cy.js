@@ -59,4 +59,20 @@ describe('Requests to API', () => {
       );
     });
   });
+
+  context('Login with API', () => {
+    it('Should be login with API with env', () => {
+      cy.request({
+        method: 'POST',
+        url: 'http://localhost:8000/users/login',
+        body: {
+          email: Cypress.env('email'),
+          password: Cypress.env('password'),
+        },
+      }).then((response) => {
+        expect(response.status).to.eq(200);
+        expect(response.body).is.not.empty;
+      });
+    });
+  });
 });
